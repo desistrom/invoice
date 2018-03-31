@@ -1,0 +1,186 @@
+p{
+  font-size: 14px;
+}
+.none-padding{
+  padding:0;
+}
+
+.invoice7{
+  padding:3em 10em;
+    font-family:'Roboto', sans-serif;
+}
+
+.img-logo{
+  width:100%;
+  max-width:150px;
+}
+
+.header-right{
+}
+
+.word-wrap{
+  word-wrap:break-word;
+}
+
+.header{
+}
+
+.sub-header{
+  color:white;
+  background-color:#0B1A19;
+}
+
+.sub-header-right{
+  padding:15px;
+}
+
+.filter-image{
+  padding:1em 0;
+  background-color:#545E5D;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin:5px 0;
+}
+
+.text-bold{
+  font-weight:bold;
+}
+
+.sub-content-left-top{
+  padding:0.5em 0 1.5em 0;
+}
+
+.content{
+  background-color:white;
+}
+
+.content-left{
+  color:white;
+  background-color:#545E5D;
+}
+
+.content-right{
+  background-color:white;
+  float: right;
+}
+
+thead{
+  background-color:#4FA5C6;
+  color:white;
+}
+
+td.tb-cell-left{
+  border-right:solid #4FA5C6 1px;
+}
+
+p{
+  margin:5px 0;
+}
+
+div.transfer{
+  padding:1.5em 0;
+}
+
+.tb-foot{
+  background-color:#4FA5C6;
+  color:white;
+}
+
+.text-invoice{
+  color:#4FA5C6;
+  font-weight:700;
+  margin-top:1em;
+}
+
+.text-foot{
+  color:#4FA5C6;
+  border-bottom:solid 2px #4FA5C6;
+  background-color:white;
+}
+
+div.row.footer{
+  background-color:#545E5D;
+}
+
+.sub-invoice{
+  background-color:#545E5D;
+  border:solid #545E5D 1px;
+}
+
+.filter-text-invoice{
+  background-color:#0B1A19;
+}
+.table-responsive{
+  margin: 0;
+}
+
+@media (max-width:1199px) {
+  .invoice7{
+    padding:3em 8em;
+  }
+}
+
+@media (max-width:991px) {
+  .invoice7{
+    padding:2em 5em;
+  }
+}
+
+@media (max-width:767px) {
+  .invoice7{
+    padding:15px;
+  }
+}
+@media (max-width:500px) {
+  .invoice7{
+    padding:0;
+  }
+  .sub-header-right p{
+    font-size: 12px;
+  }
+  .content-left h4{
+    font-size: 14px;
+  }
+  .content-left p{
+    font-size: 11px;
+  }
+  .text-invoice{
+    margin-top: 5px;
+    font-size: 24px;
+    text-align: center;
+
+  }
+  .img-logo{
+    width: 100px;
+  }
+  .sub-content-left-top{
+    padding: 10px 0;
+  }
+  .sub-content-left-bottom{
+    padding: 10px 0;
+  }
+  .text-foot p{
+    text-align: center;
+  }
+}
+
+/*style green*/
+.green{
+  background-color: #1BBC9B !important;
+  color: white;
+}
+.text-green{
+  color: #1BBC9B !important;
+  border-bottom-color:#1BBC9B; 
+}
+/*style red*/
+.red{
+  background-color: #FF0000 !important;
+  color: white;
+}
+.text-red{
+  color: #FF0000 !important;
+  border-bottom-color:#FF0000; 
+}
+

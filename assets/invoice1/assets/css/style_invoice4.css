@@ -1,0 +1,259 @@
+.none-padding{
+  padding:0;
+}
+
+div.filter-image{
+  padding-top:2.5em;
+}
+div.container.invoice4{
+  padding:3em 10em;
+  font-family: 'Roboto', sans-serif;
+}
+div.col.col-md-6.col-sm-6.col-xs-6.none-padding.shape-persegi h3{
+  margin:0;
+}
+
+div.col.col-md-6.col-sm-6.col-xs-6.none-padding.shape-persegi{
+  padding:15px 0;
+  margin-top:-2em;
+  background-color:#2DBBAD;
+}
+
+div.shape-segitiga{
+  width:0;
+  height:0;
+  border-top:solid transparent 2em;
+  border-right:solid #2DBBAD 2em;
+  border-bottom:solid transparent 2em;
+  float:right;
+  margin-right:-1px;
+  margin-top:-2em;
+}
+
+div.row.header-top{
+  background-color:#434345;
+}
+
+div.col-md-8.col-sm-8.col-xs-8.header-top-left h5{
+  color:white;
+}
+
+div.col.col-md-6.col-sm-6.col-xs-6.none-padding.shape-persegi h3{
+  color:white;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin:7.5px 0;
+}
+
+
+
+thead{
+  background-color:#2DBBAD;
+  color:white;
+}
+
+div.row.header-line{
+  background-color:#E6E4E5;
+}
+
+div.row.header-bottom{
+  padding:15px 2em;
+  background-color:#E6E4E5;
+}
+div.row.header-bottom h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+.bg-color-default{
+  background-color:#E6E4E5;
+}
+
+td.bg-color-green-light{
+  background-color:#E2F8F6;
+}
+
+.text-bold{
+  font-weight:bold;
+}
+
+td.bg-color-green-dark{
+  background-color:#2DBBAD;
+}
+
+div.shape-line{
+  background-color:#2DBBAD;
+  height:8px;
+  border-radius:15px;
+  margin-right:-10em;
+  margin-top:-4px;
+}
+
+div.row.header-top{
+  padding:2em 15px 3em 15px;
+}
+
+div.row.footer h3{
+  border-bottom:solid #2DBBAD 3px;
+  padding-bottom:5px;
+  color:#2DBBAD;
+}
+
+div.row.footer{
+  padding-top:3em;
+  background-color:white;
+}
+
+div.col-lg-12.col-md-12.col-sm-12.col-xs-12.col.sub-invoice{
+  border:solid 1px #A5A5A5;
+  padding-bottom:3em;
+  background-color:#434345;
+}
+
+div.col-md-12.text-footer{
+  padding-top:3em;
+}
+
+div.row.content{
+  background-color:white;
+}
+
+h1.text-invoice{
+  color:#2DBBAD;
+  font-weight:bold;
+  font-size:50px;
+  font-family: 'Lato', sans-serif;
+}
+
+img.img-responsive{
+}
+
+img.img-responsive.img-logo{
+  width:100%;
+  max-width:150px;
+  height:auto;
+}
+
+div.col-md-5.col-sm-5.col-xs-5.filter-img.text-center{
+
+}
+.table{
+  margin: 0;
+}
+@media (max-width:1199px) {
+ div.container.invoice4{
+  padding:3em 7em;
+}
+}
+
+@media (max-width:991px) {
+  div.container.invoice4{
+  padding:3em 5em;
+}
+h1.text-invoice{
+  font-size: 40px;
+}
+.header-bottom  h4{
+  font-size: 14px;
+}
+.header-bottom  h3{
+  font-size: 16px;
+}
+}
+
+@media (max-width:767px) {
+  div.row.header-top{
+    padding-left: 0;
+  }
+  div.col-md-8.col-sm-8.col-xs-8.header-top-left h5{
+    font-size: 12px;
+  }
+  h1.text-invoice{
+    font-size: 30px;
+  }
+  .header-top-right{
+    padding: 0;
+  }
+  div.col.col-md-6.col-sm-6.col-xs-6.none-padding.shape-persegi h3{
+    font-size: 14px;
+  }
+  div.col.col-md-6.col-sm-6.col-xs-6.none-padding.shape-persegi{
+    padding: 20.5px 0;
+  }
+  .footer h4{
+    font-size: 14px;
+  }
+  .footer h3{
+    font-size: 16px;
+  }
+}
+@media (max-width:500px) {
+  div.container.invoice4{
+  padding:15px 0;
+}
+}
+
+/*style red color*/
+.bg-red-dark{
+  background-color: #E41B23!important;
+}
+div.shape-segitiga.segitiga-red{
+  width:0;
+  height:0;
+  border-top:solid transparent 2em;
+  border-right:solid #E41B23 2em;
+  border-bottom:solid transparent 2em;
+  float:right;
+  margin-right:-1px;
+  margin-top:-2em;
+}
+.text-red{
+  color: #E41B23 !important;
+  border-bottom-color:#E41B23!important;
+}
+.bg-red-light{
+  background-color: #FFF1F1 !important;
+}
+/*style orange*/
+
+.bg-orange-dark{
+  background-color: #E87A24!important;
+}
+div.shape-segitiga.segitiga-orange{
+  width:0;
+  height:0;
+  border-top:solid transparent 2em;
+  border-right:solid #E87A24 2em;
+  border-bottom:solid transparent 2em;
+  float:right;
+  margin-right:-1px;
+  margin-top:-2em;
+}
+.text-orange{
+  color: #E87A24 !important;
+  border-bottom-color:#E87A24!important;
+}
+.bg-orange-light{
+  background-color: #F9EDE4 !important;
+}
+/*style blue color*/
+.bg-blue-dark{
+  background-color: #05B3CE!important;
+}
+div.shape-segitiga.segitiga-blue{
+  width:0;
+  height:0;
+  border-top:solid transparent 2em;
+  border-right:solid #05B3CE 2em;
+  border-bottom:solid transparent 2em;
+  float:right;
+  margin-right:-1px;
+  margin-top:-2em;
+}
+.text-blue{
+  color: #05B3CE !important;
+  border-bottom-color:#05B3CE!important;
+}
+.bg-blue-light{
+  background-color: #E7FDFF !important;
+}
