@@ -110,18 +110,18 @@ class Cms_inv extends MX_Controller {
     			}
 
                 // create invoice pdf
-                $filename   = $result['nomor_inv'];
+                // $filename   = $result['nomor_inv'];
                 //if (file_exists(INVOICE_DIR . $filename)) return false;
-                $this->data['result'] = $this->inv_model->getCms();
-                $this->data['invoice'] = $this->inv_model->rowInvoice($filename);
-                $html = $this->load->view('invoice/'.$this->data['result']['nm_template'],$this->data,true);
+                // $this->data['result'] = $this->inv_model->getCms();
+                // $this->data['invoice'] = $this->inv_model->rowInvoice($filename);
+                // $html = $this->load->view('invoice/'.$this->data['result']['nm_template'],$this->data,true);
                 //$this->pdf->setBasePath("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css");
-                $this->pdf->setPaper('A4', 'potrait');
-                $this->pdf->loadHtml($html);
-                $this->pdf->render();
-                $output = $this->pdf->output();
-                $invoice_dir  = $_SERVER['DOCUMENT_ROOT']."/module-space/assets/data_invoice/";
-                file_put_contents($invoice_dir . $filename.".pdf", $output);
+                // $this->pdf->setPaper('A4', 'potrait');
+                // $this->pdf->loadHtml($html);
+                // $this->pdf->render();
+                // $output = $this->pdf->output();
+                // $invoice_dir  = $_SERVER['DOCUMENT_ROOT']."/module-space/assets/data_invoice/";
+                // file_put_contents($invoice_dir . $filename.".pdf", $output);
     		}
 
     		$ret['notif']['nama'] = form_error('nama');
