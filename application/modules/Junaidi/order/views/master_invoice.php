@@ -69,7 +69,7 @@
 		</div>
     </form>
 </div>
-<script src="<?=base_url();?>assets/js/jquery.min.js"></script>
+<script src="<?=base_url();?>assets/invoice1/assets/js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('body').on('click','#submit',function(){
@@ -137,7 +137,7 @@
 		</div>
     </form>
 </div>
-<script src="<?=base_url();?>assets/js/jquery.min.js"></script>
+<script src="<?=base_url();?>assets/invoice1/assets/js/jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('body').on('click','#submit',function(){
