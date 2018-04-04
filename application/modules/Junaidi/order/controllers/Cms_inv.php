@@ -3,9 +3,9 @@ class Cms_inv extends MX_Controller {
 	var $data = array();
     public function __construct()
     {
-    	$this->load->model('transaksi_model');
+    	// $this->load->model('transaksi_model');
     	$this->load->model('inv_model');
-    	$this->data['menu'] = $this->transaksi_model->listMenu($this->session->userdata('previlage'));
+    	// $this->data['menu'] = $this->transaksi_model->listMenu($this->session->userdata('previlage'));
         $this->load->library('email');
         // $this->pdf->set_option('enable_html5_parser', TRUE);
         if ($this->session->userdata('is_login') != true) {

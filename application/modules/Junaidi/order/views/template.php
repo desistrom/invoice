@@ -60,9 +60,9 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <?php if(is_array($menu)){ foreach($menu as $key => $value ): ?>
-                  <li><a href="<?=site_url($value['link']);?>"><i class="fa fa-laptop"></i> <?=$value['nm_menu'];?></a></li>
-                <?php endforeach; } ?>
+                <li><a href="<?=site_url('order/cms_inv/invoice');?>"><i class="fa fa-laptop"></i> Invoice</a></li>
+                <li><a href="<?=site_url('order/cms_inv');?>"><i class="fa fa-laptop"></i> Setting Invoice</a></li>
+                <!-- <li><a href="<?=site_url('order/cms_inv');?>"><i class="fa fa-laptop"></i> template</a></li> -->
                 </ul>
               </div>
 
