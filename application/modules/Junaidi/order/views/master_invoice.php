@@ -20,7 +20,7 @@
 				<td><?=$value['perfix'].$value['id_invoice'];?></td>
 				<td><?=$value['nama'];?></td>
 				<td><?=$value['project'];?></td>
-				<td><?=$value['harga'];?></td>
+				<td>Rp. <?=number_format($value['harga'],2);?></td>
 				<td><a href="<?=site_url('order/cms_inv/edit_invoice');?>/<?=$value['id_invoice'];?>">Edit</a> | <a target="_blank" href="<?=site_url('order/cms_inv/preview_invoice');?>/<?=$value['id_invoice'];?>"> Preview</a> | <a target="_blank" href="<?=site_url('order/cms_inv/laporan_pdf');?>/<?=$value['id_invoice'];?>"> PDF</a></td>
 			</tr>
 		<?php endforeach ?>

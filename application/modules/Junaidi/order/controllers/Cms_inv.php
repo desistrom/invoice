@@ -369,7 +369,7 @@ class Cms_inv extends MX_Controller {
         $id = end($url);
         $this->data['result'] = $this->inv_model->getCms();
         $this->data['invoice'] = $this->inv_model->rowInvoice($id);
-        $html = $this->load->view('invoice/invoice4_new', $this->data, true);
+        $html = $this->load->view('invoice/invoice4_new_pdf', $this->data, true);
         $filename = 'report_'.time();
         $this->pdfgenerator->generate($html, $filename, true, 'A4', 'portrait');
 
