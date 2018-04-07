@@ -57,7 +57,7 @@
 			padding-top: 25px;
 			color: #2DBBAD;
 		}
-		.header-line{
+/*		.header-line{
 			height: auto;
 			overflow: hidden;
 			background-color: green;
@@ -67,30 +67,28 @@
 		.header-line .line{
 			display: inline-block;
 			padding: 0;
-		}
-		.header-line .straight-line{
-			float: right;
-			background-color: #2DBBAD;
+		}*/
+		 .straight-line{
+				background-color: #2DBBAD;
 			height: 6px;
 			width: 50%;
-			margin-top: 1.8em;
-			border-radius: 10px;
+
 			margin-right: -1em;
 		}
-		.header-line .square{
+		 .square{
 			 width: 0;
 		    height: 0;
 		    width: 10%;
 		    float: left;
-		    border-top: solid transparent 1.5em;
+		    border-top: solid transparent 2em;
 		    border-right: solid #2DBBAD 2em;
-		    border-bottom: solid transparent 1.5em;
+		    border-bottom: solid transparent 2em;
 		/*    margin-top: -2em;*/
 /*		    float: right;
 		    margin-right: -1px;
 		    margin-top: -2em;*/
 		}
-		.header-line .rectangle h3{
+		 .rectangle h3{
 			padding: 13px;
 			width: 40%;
 			color: white;
@@ -109,7 +107,7 @@
 			display: inline-table;
 		}		
 		.header-bottom .sub-header-bottom.left{
-			float: left;
+			
 			width: 50%;
 			height: auto;
 			overflow: hidden;
@@ -238,10 +236,35 @@
 <body>
 	<div class="invoice4">
 		<div class="container">
-			<div class="header">
-				<div class="sub-header header-left">
+			<div class="header" style="padding-bottom: 3.5em;">
+				<table width="100%">
+					<tr>
+						<td style="color: white;width: 60%;">
+								<h4><?=$result['nama_perusahaan'];?></h4>
+                    			<h4><?=$result['alamat_perusahaan'];?></h4>
+                    			<table>
+                    				<tr style="padding: 0;font-weight:bold; ">
+                    					<td style="padding: 0;">No. Telp</td>
+                    					<td style="padding: 0;">:</td>
+                    					<td style="padding: 0;"><?=$result['phone_perusahaan'];?></td>
+                    				</tr>
+                    				<tr style="padding: 0;font-weight:bold; ">
+                    					<td style="padding: 0;">Email</td>
+                    					<td style="padding: 0;">:</td>
+                    					<td style="padding: 0;"><?=$result['email_perusahaan'];?></td>
+                    				</tr>
+                    			</table>
+                    <!-- 			<h4>No. Telp :<?=$result['phone_perusahaan'];?></h4>
+                    			<h4>Email : <?=$result['email_perusahaan'];?></h4>	 -->
+						</td>
+						<td style="width: 40%;">
+							<h1 class="text-invoice">INVOICE</h1>
+						</td>
+					</tr>
+				</table>
+<!-- 				<div class="sub-header header-left">
  					<h4><?=$result['nama_perusahaan'];?></h4>
-                    <h4><?=$result['alamat_perusahaan'];?></h4>
+                    <h4 ><?=$result['alamat_perusahaan'];?></h4>
                  	<h4>
                  	<table cellspacing="0;">
                     	<tr>
@@ -254,11 +277,35 @@
                     	</tr>
                     </table>
                  	</h4>
-                </div>
-                <div class="sub-header header-right" style="margin-left: -200px">
+                </div> -->
+       <!--          <div class="sub-header header-right" style="margin-left: -200px">
 					<h1 class="text-invoice">INVOICE</h1>
-				</div>
+				</div> -->
 			</div>
+			<table width="100%" style="margin-top: -2.3em; padding: 0;" >
+				<tr style="padding: 0;">
+					<td width="30%" style="padding: 0;">
+						<div class="line straight-line" style="width: 100%;margin-left: -1em;"></div>
+					</td>
+					<td width="70%" style="padding: 0;">
+						<table width="100%;" style="padding: 0;margin-right: -1em;">
+							<tr style="padding: 0; ">
+								<td style="padding: 0; ">
+									<div class="line straight-line" style="width: 100%;"></div>
+								</td>
+								<td style="padding: 0;width: 5%; text-align: right">
+									<div class="line square"></div>
+								</td>
+								<td style="padding: 0;width: 58%;background-color: #2DBBAD">
+									<div class="line rectangle">
+										<h3 style="background-color: #2DBBAD">No <?=$invoice['perfix'].$invoice['id_invoice'];?></h3>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
 		<!-- 	<div class="header-line" style="top: -10em;">
 				<div class="line straight-line"></div>
 				<div class="line square"></div>
@@ -269,15 +316,25 @@
 
 			</div> -->
 			<div class="header-bottom">
-					<h2>INVOICE TO</h2>
-				<div class="sub-header-bottom left">
-					<h3><?=$invoice['nama'];?></h3>
-				</div>
-				<div class="sub-header-bottom right" style="margin-top: -30px">
-					<h4 style="margin-left: 400px;">Total due : Rp. <?=number_format($invoice['harga'],2);?></h4>
-					<h4 style="margin-left: 400px;">Invoice Date : <?=date("d M Y", strtotime($invoice['created']));?></h4>
-					<h4 style="margin-left: 400px;">Invoice No : <?=$invoice['perfix'].$invoice['id_invoice'];?></h4>
-				</div>
+				<table style="width: 100%;">
+					<tr>
+						<td style="width: 60%">
+								
+							<h2>INVOICE TO</h2>
+							<h3><?=$invoice['nama'];?></h3>
+							
+						</td>
+						<td style="width: 40%;">
+							<div class="sub-header-bottom right" style="margin-top: -30px">
+								<h4 style="">Total due : Rp. <?=number_format($invoice['harga'],2);?></h4>
+								<h4 style="">Invoice Date : <?=date("d M Y", strtotime($invoice['created']));?></h4>
+								<!-- <h4 style="">Invoice No : <?=$invoice['perfix'].$invoice['id_invoice'];?></h4> -->
+							</div>
+						</td>
+					</tr>
+				</table>
+			
+
 			</div>
 			<div class="content">
 				<table class="table" cellspacing="0">
@@ -333,7 +390,7 @@
 					</table>
 				</div>
 				<div class="sub-footer footer-right">
-					<img class="logo" src="<?=$_SERVER['DOCUMENT_ROOT'].'/invoice/assets/file/bkkbn.png'; ?>">
+					<img class="logo" src="<?=$_SERVER['DOCUMENT_ROOT'].'/invoice/assets/file/'.$result['logo']; ?>">
 				</div>
 			</div>
 			<div class="text-footer">
